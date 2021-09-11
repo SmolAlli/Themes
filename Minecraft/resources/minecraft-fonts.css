@@ -1,27 +1,27 @@
 @font-face {
     font-family: 'Minecraft';
-    src: url("https://raw.githubusercontent.com/SmolAlli/Themes/blob/main/Minecraft/resources/minecraft-font/MinecraftRegular-Bmg3.woff") format("woff"),
-    url("https://raw.githubusercontent.com/SmolAlli/Themes/blob/main/Minecraft/resources/minecraft-font/MinecraftRegular-Bmg3.ttf") format("truetype");
+    src: url("/minecraft-font/MinecraftRegular-Bmg3.woff") format("woff"),
+    url("/minecraft-font/MinecraftRegular-Bmg3.ttf") format("truetype");
 }
 
 @font-face {
     font-family: 'Minecraft';
     font-weight: bold;
-    src: url("https://raw.githubusercontent.com/SmolAlli/Themes/blob/main/Minecraft/resources/minecraft-font/MinecraftBold-nMK1.woff") format("woff"),
-    url("https://raw.githubusercontent.com/SmolAlli/Themes/blob/main/Minecraft/resources/minecraft-font/MinecraftBold-nMK1.ttf") format("truetype");
+    src: url("/minecraft-font/MinecraftBold-nMK1.woff") format("woff"),
+    url("/minecraft-font/MinecraftBold-nMK1.ttf") format("truetype");
 }
 
 @font-face {
     font-family: 'Minecraft';
     font-style: italic;
-    src: url("https://raw.githubusercontent.com/SmolAlli/Themes/blob/main/Minecraft/resources/minecraft-font/MinecraftItalic-R8Mo.woff") format("woff"),
-    url("https://raw.githubusercontent.com/SmolAlli/Themes/blob/main/Minecraft/resources/minecraft-font/MinecraftItalic-R8Mo.ttf") format("truetype");
+    src: url("/minecraft-font/MinecraftItalic-R8Mo.woff") format("woff"),
+    url("/minecraft-font/MinecraftItalic-R8Mo.ttf") format("truetype");
 }
 
 @font-face {
     font-family: 'Minecraft';
     font-weight: bold;
     font-style: italic;
-    src: url("https://raw.githubusercontent.com/SmolAlli/Themes/blob/main/Minecraft/resources/minecraft-font/MinecraftItalic-R8Mo.woff") format("woff"),
-    url("https://raw.githubusercontent.com/SmolAlli/Themes/blob/main/Minecraft/resources/minecraft-font/MinecraftBoldItalic-1y1e.ttf") format("truetype");
+    src: url("/minecraft-font/MinecraftItalic-R8Mo.woff") format("woff"),
+    url("/minecraft-font/MinecraftBoldItalic-1y1e.ttf") format("truetype");
 }
