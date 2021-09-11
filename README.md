@@ -1,2 +1,5 @@
 # Themes
-A collection of my themes (whenever I make them :P)
+A collection of my themes
+
+Current themes:
+* Minecraft (currently in development)
