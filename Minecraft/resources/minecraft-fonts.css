@@ -1,23 +1,23 @@
 @font-face {
     font-family: 'Minecraft';
-    src: url("minecraft-font/MinecraftRegular-Bmg3.otf") format("opentype");
+    src: url("https://github.com/SmolAlli/Themes/blob/main/Minecraft/resources/minecraft-font/MinecraftRegular-Bmg3.otf") format("opentype");
 }
 
 @font-face {
     font-family: 'Minecraft';
     font-weight: bold;
-    src: url("minecraft-font/MinecraftBold-nMK1.otf") format("opentype");
+    src: url("https://github.com/SmolAlli/Themes/blob/main/Minecraft/resources/minecraft-font/MinecraftBold-nMK1.otf") format("opentype");
 }
 
 @font-face {
     font-family: 'Minecraft';
     font-style: italic;
-    src: url("minecraft-font/MinecraftItalic-R8Mo.otf") format("opentype");
+    src: url("https://github.com/SmolAlli/Themes/blob/main/Minecraft/resources/minecraft-font/MinecraftItalic-R8Mo.otf") format("opentype");
 }
 
 @font-face {
     font-family: 'Minecraft';
     font-weight: bold;
     font-style: italic;
-    src: url("minecraft-font/MinecraftBoldItalic-1y1e.otf") format("opentype");
+    src: url("https://github.com/SmolAlli/Themes/blob/main/Minecraft/resources/minecraft-font/MinecraftBoldItalic-1y1e.otf") format("opentype");
 }
