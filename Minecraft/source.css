@@ -1,7 +1,68 @@
+:root {
+    --titlebar-height: 20px;
+    --titlebar-img: "https://smolalli.github.io/Themes/blob/main/Minecraft/dirt-bar.png";
+    --titlebar-content-before: 'Minecraft';
+    --titlebar-content-after: 'Discord';
+}
+
 * {
     font-family: 'Minecraft' !important;
 }
 
 .titleBar-AC4pGV {
     background-image: url("https://smolalli.github.io/Themes/blob/main/Minecraft/dirt-bar.png");
+}
+
+/*Source*/
+
+.titleBar-AC4pGV {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    top: 0;
+    height: var(--titlebar-height);
+    padding: 3px 2px 3px 3px;
+    box-sizing: border-box;
+    z-index: 9999;
+}
+
+.wordmark-2iDDfm {
+    top: 0;
+    left: 0;
+    padding: 0 3px;
+    box-sizing: border-box;
+    width: 100%;
+    height: var(--titlebar-height);
+    display: flex;
+    align-items: center;
+    background-image: var(--titlebar-img);
+}
+
+.app-focused .wordmark-2iDDfm {
+    background-image:var(--titlebar-img);
+}
+
+.app-focused .wordmark-2iDDfm::before {
+    opacity: 1;
+}
+
+.wordmark-2iDDfm::before {
+    content: var(--titlebar-content-before);
+    height: var(--titlebar-height);
+    z-index: 1;
+    position: relative;
+    color: #fff;
+    opacity: .8;
+    padding: 0 3px;
+    line-height: var(--titlebar-height);
+    font-smooth: always;
+}
+
+.wordmark-2iDDfm::after {
+    content: var(--titlebar-content-after)
+}
+
+.wordmark-2iDDfm svg {
+    display: none;
 }
