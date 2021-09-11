@@ -6,21 +6,18 @@
 @font-face {
     font-family: 'Minecraft';
     font-weight: bold;
-    src: url("MinecraftBold-nMK1.woff") format("woff"),
-    url("MinecraftBold-nMK1.ttf") format("truetype");
+    src: url("MinecraftBold-nMK1.ttf") format("truetype");
 }
 
 @font-face {
     font-family: 'Minecraft';
     font-style: italic;
-    src: url("MinecraftItalic-R8Mo.woff") format("woff"),
-    url("MinecraftItalic-R8Mo.ttf") format("truetype");
+    src: url("MinecraftItalic-R8Mo.ttf") format("truetype");
 }
 
 @font-face {
     font-family: 'Minecraft';
     font-weight: bold;
     font-style: italic;
-    src: url("MinecraftItalic-R8Mo.woff") format("woff"),
-    url("MinecraftBoldItalic-1y1e.ttf") format("truetype");
+    src: url("MinecraftBoldItalic-1y1e.ttf") format("truetype");
 }
