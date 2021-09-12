@@ -9,6 +9,10 @@
     font-family: 'Minecraft' !important;
 }
 
+.winButton-iRh8-Z {
+    top: 0;
+}
+
 .titleBar-AC4pGV {
     background-image: url("https://smolalli.github.io/Themes/blob/main/Minecraft/dirt-bar.png");
 }
@@ -35,14 +39,6 @@
     display: flex;
     align-items: center;
     background-image: var(--titlebar-img);
-}
-
-.app-focused .wordmark-2iDDfm {
-    background-image:var(--titlebar-img);
-}
-
-.app-focused .wordmark-2iDDfm::before {
-    opacity: 1;
 }
 
 .wordmark-2iDDfm::before {
