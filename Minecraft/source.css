@@ -79,7 +79,7 @@
 .titleBar-AC4pGV {
     position: relative;
     display: flex;
-    margin-top: 0;
+    margin-top: 5px;
     top: 0;
     height: var(--titlebar-height);
     box-sizing: border-box;
