@@ -1,15 +1,21 @@
 :root {
     --titlebar-height: 20px;
-    --titlebar-img: "https://smolalli.github.io/Themes/blob/main/Minecraft/dirt-bar.png";
+    --background-img: url("https://smolalli.github.io/Themes/Minecraft/dirt-background.png");
     --titlebar-content-before: 'Minecraft';
     --titlebar-content-after: 'Discord';
+    --transparencycolor: 0,0,0;
+	--transparencyalpha: 0.15;
+	--messagetransparency: 0.5;
+	--guildchanneltransparency: 0.15;
+	--memberlisttransparency: 0.0;
+    --backdrop: rgba(0,0,0,0.85);
 }
 
 * {
     font-family: 'Minecraft' !important;
 }
 
-.theme-dark {
+/* .theme-dark {
     --header-primary: #fff;
     --header-secondary: #b9bbbe;
     --text-normal: #dcddde;
@@ -29,7 +35,7 @@
     --background-secondary-alt: rgba(0,0,0,0);
     --background-tertiary: rgba(0,0,0,0);
     --background-accent: rgba(0,0,0,0);
-    --background-floating: rgba(0,0,0,0);
+    --background-floating: #000000;
     --background-mobile-primary: rgba(0,0,0,0);
     --background-mobile-secondary: rgba(0,0,0,0);
     --background-modifier-hover: rgba(79,84,92,0.16);
@@ -74,6 +80,158 @@
     --deprecated-text-input-border-hover: #040405;
     --deprecated-text-input-border-disabled: #202225;
     --deprecated-text-input-prefix: #dcddde;
+} */
+
+
+body,
+.appMount-3lHmkl .app-1q1i1E,
+.appMount-3lHmkl .app-2rEoOp,
+.appMount-3lHmkl .loading-Ags1CY,
+.appMount-3lHmkl .wrapper-1prNyd,
+.appMount-3lHmkl .bg-h5JY_x,
+.appMount-3lHmkl .layer-3QrUeG,
+.appMount-3lHmkl .container-3w7J-x,
+.appMount-3lHmkl .privateChannels-1nO12o,
+.appMount-3lHmkl .panels-j1Uci_ > *,
+.appMount-3lHmkl .chat-3bRxxu,
+.appMount-3lHmkl .threadSidebar-1o3BTy,
+.appMount-3lHmkl .wrapper-3vR61M,
+.appMount-3lHmkl .noChannel-Z1DQK7,
+.appMount-3lHmkl .members-1998pB,
+.appMount-3lHmkl .members-1998pB > div,
+.appMount-3lHmkl .content-MLh4nU,
+.appMount-3lHmkl .container-1D34oG,
+.appMount-3lHmkl .container-lRFx4q,
+.appMount-3lHmkl .applicationStore-1pNvnv,
+.appMount-3lHmkl .pageWrapper-1PgVDX,
+.appMount-3lHmkl .scrollerBase-289Jih,
+.appMount-3lHmkl .scroller-2FKFPG,
+.appMount-3lHmkl .standardSidebarView-3F1I7i,
+.appMount-3lHmkl .contentRegion-3nDuYy {
+    background: transparent;
+}
+
+.appMount-3lHmkl .scroller-2ZPeAD {								
+	border: none;
+}
+
+.appMount-3lHmkl .sidebarRegion-VFTUkN,							
+.appMount-3lHmkl .sidebar-_0OpfR {								
+	background-color: rgba(var(--transparencycolor), calc(0.2 * (var(--transparencyalpha) / (var(--transparencyalpha) + 0.00000000000000000000001))));
+}
+
+.appMount-3lHmkl {												
+	background-color: rgba(var(--transparencycolor), var(--transparencyalpha));
+}
+.appMount-3lHmkl .wrapper-3NnKdC {								
+	background-color: rgba(var(--transparencycolor), calc(var(--guildchanneltransparency) * 2));
+}
+.appMount-3lHmkl .sidebar-2K8pFh {								
+	background-color: rgba(var(--transparencycolor), var(--guildchanneltransparency));
+}
+.appMount-3lHmkl .panels-j1Uci_ {									/* account/voice		container							*/
+	background-color: rgba(var(--transparencycolor), calc(var(--guildchanneltransparency) / 1.5));
+}
+.appMount-3lHmkl .container-1r6BKw.themed-ANHk51 {				/* channelheader		container							*/
+	background-color: rgba(var(--transparencycolor), var(--guildchanneltransparency));
+}
+.appMount-3lHmkl .membersWrap-2h-GB4 {							/* members				container							*/
+	background-color: rgba(var(--transparencycolor), var(--memberlisttransparency));
+}
+.appMount-3lHmkl .tabBar-fg4VK9 {									/* members				tabbar								*/
+	background-color: rgba(var(--transparencycolor), var(--memberlisttransparency));
+}
+.appMount-3lHmkl .nowPlayingColumn-2sl4cE {						/* peoples				now playing							*/
+	background-color: rgba(var(--transparencycolor), var(--memberlisttransparency));
+}
+
+.appMount-3lHmkl .image-3zK3Wt {									/* app					errorscreen image					*/
+	background-image: url(https://discord.com/assets/e9baf4b505eb54129f832556ea16538e.svg);
+	opacity: 0.6;
+}
+
+body::before,
+body::after {
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	pointer-events: none;
+	z-index: -1;
+}
+body::before {
+	background: var(--background-img) center/cover;
+}
+body::after {
+	backdrop-filter: blur(unset);
+}
+.layer-3QrUeG {
+	z-index: 1000;
+}
+.container-16j22k::before,
+.layer-3QrUeG ~ .layer-3QrUeG::before,
+.root-3R2ngo::before,
+.container-16j22k::after,
+.layer-3QrUeG ~ .layer-3QrUeG::after,
+.root-3R2ngo::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	pointer-events: none;
+	z-index: -1;
+}
+.container-16j22k::before,
+.layer-3QrUeG ~ .layer-3QrUeG::before,
+.root-3R2ngo::before {
+	background: var(--background-img) center/cover;
+	background-attachment: fixed;
+}
+.container-16j22k::after,
+.layer-3QrUeG ~ .layer-3QrUeG::after,
+.root-3R2ngo::after {
+	background-color: rgba(var(--transparencycolor), var(--transparencyalpha));
+	backdrop-filter: blur(unset);
+}
+.uploadArea-3QgLtW,
+.backdrop-29yll0,
+.backdrop-1wrmKB {
+	background: transparent !important;
+	opacity: 1 !important;
+	animation: none !important;
+}
+.uploadArea-3QgLtW::before,
+.backdrop-29yll0::before,
+.backdrop-1wrmKB::before,
+.uploadArea-3QgLtW::after,
+.backdrop-29yll0::after,
+.backdrop-1wrmKB::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	pointer-events: none;
+	z-index: -2;
+}
+.uploadArea-3QgLtW::before,
+.backdrop-29yll0::before,
+.backdrop-1wrmKB::before {
+	background: var(--backdrop) center/cover;
+	background-attachment: fixed;
+}
+.uploadArea-3QgLtW::after,
+.backdrop-29yll0::after,
+.backdrop-1wrmKB::after {
+	backdrop-filter: blur(unset);
+}
+.withLayer-RoELSG {
+	z-index: -1;
 }
 
 .titleBar-AC4pGV {
@@ -84,6 +242,20 @@
     height: var(--titlebar-height);
     box-sizing: border-box;
     z-index: 9999;
+}
+
+.wordmark-2iDDfm {
+    width: auto;
+    height: 5px;
+    padding: 10px 0 0 4px;
+    line-height: 20px;
+    font-size: 0.9em;
+}
+
+.wordmark-2iDDfm::before, .wordmark-2iDDfm::after {
+    position: relative;
+    width: auto;
+    height: 22px; 
 }
 
 .wordmark-2iDDfm {
@@ -103,18 +275,52 @@
     z-index: 1;
     position: relative;
     color: #fff;
+    font-weight: bold;
     opacity: .8;
     padding: 0 3px;
-    line-height: var(--titlebar-height);
+    line-height: 15px;
 }
 
 .wordmark-2iDDfm::after {
     content: var(--titlebar-content-after);
     height: var(--titlebar-height);
     z-index: 1;
+    height: var(--titlebar-height);
+    z-index: 1;
     position: relative;
+    color: #fff;
+    opacity: .8;
+    line-height: 15px;
 }
 
 .wordmark-2iDDfm svg {
+    display: none;
+}
+
+.channelIcon-1MN1lz {
+    display: none;
+}
+    
+.iconMention-1_KJ_B::before {
+    content: "#";
+}
+    
+.appMount-3lHmkl .iconMention-1_KJ_B {
+    padding-left: 2px;
+}
+
+.message-2qnXI6, .wrapper-1F5TKx, .scroller-1JbKMe.thin-1ybCId.scrollerBase-289Jih.fade-2kXiP2 {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.message-2qnXI6.selected-2P5D_Z, .mouse-mode.full-motion .message-2qnXI6:hover, .reaction-1hd86g {
+    background-color: rgb(0, 0, 0);
+}
+
+.scroller-RmtA4e.thin-1ybCId.scrollerBase-289Jih.fade-2kXiP2 {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.theme-dark .form-2fGMdU:before {
     display: none;
 }
