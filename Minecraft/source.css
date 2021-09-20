@@ -9,6 +9,7 @@
 	--guildchanneltransparency: 0.15;
 	--memberlisttransparency: 0.0;
     --backdrop: rgba(0,0,0,0.85);
+    --home-icon-image: url("https://smolalli.github.io/Themes/Minecraft/grass_block.png")
 }
 
 * {
