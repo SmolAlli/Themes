@@ -3,11 +3,11 @@
     --background-img: url("https://smolalli.github.io/Themes/Minecraft/dirt-background.png");
     --titlebar-content-before: 'Minecraft';
     --titlebar-content-after: 'Discord';
-    --transparencycolor: 0,0,0;
-	--transparencyalpha: 0.15;
-	--messagetransparency: 0.5;
-	--guildchanneltransparency: 0.15;
-	--memberlisttransparency: 0.0;
+    --transparency-color: 0,0,0;
+	--transparency-alpha: 0.15;
+	--message-transparency: 0.5;
+	--guild-channel-transparency: 0.15;
+	--member-list-transparency: 0.0;
     --backdrop: rgba(0,0,0,0.85);
     --home-icon-image: url("https://smolalli.github.io/Themes/Minecraft/grass_block.png")
 }
@@ -108,7 +108,8 @@ body,
 .appMount-3lHmkl .scrollerBase-289Jih,
 .appMount-3lHmkl .scroller-2FKFPG,
 .appMount-3lHmkl .standardSidebarView-3F1I7i,
-.appMount-3lHmkl .contentRegion-3nDuYy {
+.appMount-3lHmkl .contentRegion-3nDuYy 
+.appMount-3lHmkl .membersWrap-2h-GB4 {
     background: transparent;
 }
 
@@ -118,35 +119,38 @@ body,
 
 .appMount-3lHmkl .sidebarRegion-VFTUkN,							
 .appMount-3lHmkl .sidebar-_0OpfR {								
-	background-color: rgba(var(--transparencycolor), calc(0.2 * (var(--transparencyalpha) / (var(--transparencyalpha) + 0.00000000000000000000001))));
+	background-color: rgba(var(--transparency-color), calc(0.2 * (var(--transparency-alpha) / (var(--transparency-alpha) + 0.00000000000000000000001))));
 }
 
 .appMount-3lHmkl {												
-	background-color: rgba(var(--transparencycolor), var(--transparencyalpha));
-}
-.appMount-3lHmkl .wrapper-3NnKdC {								
-	background-color: rgba(var(--transparencycolor), calc(var(--guildchanneltransparency) * 2));
-}
-.appMount-3lHmkl .sidebar-2K8pFh {								
-	background-color: rgba(var(--transparencycolor), var(--guildchanneltransparency));
-}
-.appMount-3lHmkl .panels-j1Uci_ {									/* account/voice		container							*/
-	background-color: rgba(var(--transparencycolor), calc(var(--guildchanneltransparency) / 1.5));
-}
-.appMount-3lHmkl .container-1r6BKw.themed-ANHk51 {				/* channelheader		container							*/
-	background-color: rgba(var(--transparencycolor), var(--guildchanneltransparency));
-}
-.appMount-3lHmkl .membersWrap-2h-GB4 {							/* members				container							*/
-	background-color: rgba(var(--transparencycolor), var(--memberlisttransparency));
-}
-.appMount-3lHmkl .tabBar-fg4VK9 {									/* members				tabbar								*/
-	background-color: rgba(var(--transparencycolor), var(--memberlisttransparency));
-}
-.appMount-3lHmkl .nowPlayingColumn-2sl4cE {						/* peoples				now playing							*/
-	background-color: rgba(var(--transparencycolor), var(--memberlisttransparency));
+	background-color: rgba(var(--transparency-color), var(--transparency-alpha));
 }
 
-.appMount-3lHmkl .image-3zK3Wt {									/* app					errorscreen image					*/
+.appMount-3lHmkl .wrapper-3NnKdC {								
+	background-color: rgba(var(--transparency-color), calc(var(--guild-channel-transparency) * 2));
+}
+
+.appMount-3lHmkl .sidebar-2K8pFh {								
+	background-color: rgba(var(--transparency-color), var(--guild-channel-transparency));
+}
+
+.appMount-3lHmkl .panels-j1Uci_ {
+	background-color: rgba(var(--transparency-color), calc(var(--guild-channel-transparency) / 1.5));
+}
+
+.appMount-3lHmkl .container-1r6BKw.themed-ANHk51 {
+	background-color: rgba(var(--transparency-color), var(--guild-channel-transparency));
+}
+
+.appMount-3lHmkl .tabBar-fg4VK9 {
+	background-color: rgba(var(--transparency-color), var(--member-list-transparency));
+}
+
+.appMount-3lHmkl .nowPlayingColumn-2sl4cE {
+	background-color: rgba(var(--transparency-color), var(--member-list-transparency));
+}
+
+.appMount-3lHmkl .image-3zK3Wt {
 	background-image: url(https://discord.com/assets/e9baf4b505eb54129f832556ea16538e.svg);
 	opacity: 0.6;
 }
@@ -162,15 +166,19 @@ body::after {
 	pointer-events: none;
 	z-index: -1;
 }
+
 body::before {
 	background: var(--background-img) center/cover;
 }
+
 body::after {
 	backdrop-filter: blur(unset);
 }
+
 .layer-3QrUeG {
 	z-index: 1000;
 }
+
 .container-16j22k::before,
 .layer-3QrUeG ~ .layer-3QrUeG::before,
 .root-3R2ngo::before,
@@ -186,18 +194,21 @@ body::after {
 	pointer-events: none;
 	z-index: -1;
 }
+
 .container-16j22k::before,
 .layer-3QrUeG ~ .layer-3QrUeG::before,
 .root-3R2ngo::before {
 	background: var(--background-img) center/cover;
 	background-attachment: fixed;
 }
+
 .container-16j22k::after,
 .layer-3QrUeG ~ .layer-3QrUeG::after,
 .root-3R2ngo::after {
-	background-color: rgba(var(--transparencycolor), var(--transparencyalpha));
+	background-color: rgba(var(--transparency-color), var(--transparency-alpha));
 	backdrop-filter: blur(unset);
 }
+
 .uploadArea-3QgLtW,
 .backdrop-29yll0,
 .backdrop-1wrmKB {
@@ -205,6 +216,7 @@ body::after {
 	opacity: 1 !important;
 	animation: none !important;
 }
+
 .uploadArea-3QgLtW::before,
 .backdrop-29yll0::before,
 .backdrop-1wrmKB::before,
@@ -220,17 +232,20 @@ body::after {
 	pointer-events: none;
 	z-index: -2;
 }
+
 .uploadArea-3QgLtW::before,
 .backdrop-29yll0::before,
 .backdrop-1wrmKB::before {
 	background: var(--backdrop) center/cover;
 	background-attachment: fixed;
 }
+
 .uploadArea-3QgLtW::after,
 .backdrop-29yll0::after,
 .backdrop-1wrmKB::after {
 	backdrop-filter: blur(unset);
 }
+
 .withLayer-RoELSG {
 	z-index: -1;
 }
