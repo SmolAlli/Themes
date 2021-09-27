@@ -1,6 +1,6 @@
 :root {
     --titlebar-height: 20px;
-    --background-img: url("https://smolalli.github.io/Themes/Minecraft/dirt-background.png");
+    --background-img: url("https://smolalli.github.io/Themes/Minecraft/resources/backgrounds/main-background.png");
     --titlebar-content-before: 'Minecraft';
     --titlebar-content-after: 'Discord';
     --transparency-color: 0,0,0;
@@ -9,7 +9,17 @@
 	--guild-channel-transparency: 0.15;
 	--member-list-transparency: 0.0;
     --backdrop: rgba(0,0,0,0.85);
-    --home-icon-image: url("https://smolalli.github.io/Themes/Minecraft/grass_block.png")
+    --home-icon-image: url("https://smolalli.github.io/Themes/Minecraft/resources/grass_block.png");
+
+    --bg-1: url("https://smolalli.github.io/Themes/Minecraft/resources/backgrounds/background-1.png");
+    --bg-2: url("https://smolalli.github.io/Themes/Minecraft/resources/backgrounds/background-2.png");
+    --bg-3: url("https://smolalli.github.io/Themes/Minecraft/resources/backgrounds/background-3.png");
+    --bg-4: url("https://smolalli.github.io/Themes/Minecraft/resources/backgrounds/background-4.png");
+    --bg-5: url("https://smolalli.github.io/Themes/Minecraft/resources/backgrounds/background-5.png");
+    --bg-6: url("https://smolalli.github.io/Themes/Minecraft/resources/backgrounds/background-6.png");
+    --bg-7: url("https://smolalli.github.io/Themes/Minecraft/resources/backgrounds/background-7.png");
+    --bg-8: url("https://smolalli.github.io/Themes/Minecraft/resources/backgrounds/background-8.png");
+    --bg-9: url("https://smolalli.github.io/Themes/Minecraft/resources/backgrounds/background-9.png");
 }
 
 * {
@@ -363,4 +373,7 @@ body::after {
 .wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9, .wrapper-1BJsBx:hover .childWrapper-anI2G9{
     background-color: transparent;
 }
-  
+
+.chat-3bRxxu {
+    background-image: var(--bg-1) center/cover;
+}
