@@ -374,6 +374,21 @@ body::after {
     background-color: transparent;
 }
 
-.chat-3bRxxu {
-    background-image: var(--bg-1) center/cover;
+.chat-3bRxxu .chatContent-a9vAAp::before,
+.chat-3bRxxu .chatContent-a9vAAp::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	pointer-events: none;
+	z-index: 0;
 }
+.chat-3bRxxu .chatContent-a9vAAp::before {
+	background: var(--bg-chat-area) center/cover;
+}
+.chat-3bRxxu .chatContent-a9vAAp::after {
+	backdrop-filter: blur(unset);
+}
+  
