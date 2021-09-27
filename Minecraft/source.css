@@ -340,7 +340,7 @@ body::after {
 }
 
 .message-2qnXI6.selected-2P5D_Z, .mouse-mode.full-motion .message-2qnXI6:hover, .reaction-1hd86g {
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.65);
 }
 
 .scroller-RmtA4e.thin-1ybCId.scrollerBase-289Jih.fade-2kXiP2 {
