@@ -1,0 +1,39 @@
+/**
+ * @name MinimalMode
+ * @version 1.0.0
+ * @description A theme to replace BetterDiscord's built-in Minimal Mode
+ * @author SmolAlli, Zerebos, Tropical, dav1312, Liberontissauri
+ * 
+ * @website https://github.com/SmolAlli
+ * @source hhttps://raw.githubusercontent.com/BetterDiscord/BetterDiscord/1d0c45f25b96de6774e2f2e5531c9e807c703abe/renderer/src/styles/builtins/minimalmode.css
+ */
+
+@import url("https://smolalli.github.io/themes/MinimalMode/source.css");
+
+/* 
+
+  =====================================================================================
+  
+  ,--.   ,--.,--.        ,--.                  ,--.    ,--.   ,--.          ,--.        
+  |   `.'   |`--',--,--, `--',--,--,--. ,--,--.|  |    |   `.'   | ,---.  ,-|  | ,---.  
+  |  |'.'|  |,--.|      \,--.|        |' ,-.  ||  |    |  |'.'|  || .-. |' .-. || .-. : 
+  |  |   |  ||  ||  ||  ||  ||  |  |  |\ '-'  ||  |    |  |   |  |' '-' '\ `-' |\   --. 
+  `--'   `--'`--'`--''--'`--'`--`--`--' `--`--'`--'    `--'   `--' `---'  `---'  `----'
+
+  =====================================================================================
+
+  This theme is a replacement, at least temporarily, for BetterDiscord's Minimal mode.
+  Although SmolAlli will be taking care of the theme, they do not take credit for the
+  work by others, especially those that are contributors to the BetterDiscord project.
+
+  Please report all issues to https://github.com/SmolAlli/Themes/issues or let
+  SmolAlli#2706 know on the BetterDiscord discord at https://betterdiscord.app/invite
+
+*/
+
+/* Variables */
+:root {
+    --guildbar-width: 56px;
+    --sidebar-width: 200px;
+    --header-height: 40px;
+}
