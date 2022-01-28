@@ -1,5 +1,10 @@
 :root {
     color: var(--channels-default);
+    
+    /* Variables */
+	--guildbar-width: 56px;
+	--sidebar-width: 200px;
+	--header-height: 40px;
 }
 
 /* Makes all member list/"channel information" areas work */
