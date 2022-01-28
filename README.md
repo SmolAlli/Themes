@@ -2,4 +2,5 @@
 A collection of my themes
 
 Current themes:
-* Minecraft (currently in development)
+* MinimalMode
+* Minecraft (currently paused/incomplete)
