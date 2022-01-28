@@ -4,6 +4,8 @@ A theme to keep Discord small and minimal. This is based off of BetterDiscord's 
 
 This theme can usually work with other themes and plugins; however, there are some that take edits which MinimalMode does not account for. If you have a theme/plugin that you would like to see be compatible with MinimalMode, please create an issue with the \[Compatibility\] tag.
 
+Original contributers: Zerebos, Tropical, dav1312, Liberontissauri
+
 ## Screenshots
 
 ### Main Chat
