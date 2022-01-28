@@ -2,8 +2,8 @@
     color: var(--channels-default);
     
     /* Variables */
-	--guildbar-width: 56px;
-	--sidebar-width: 200px;
+    --guildbar-width: 56px;
+    --sidebar-width: 200px;
 	--header-height: 40px;
 }
 
