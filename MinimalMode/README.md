@@ -8,7 +8,7 @@ This theme can usually work with other themes and plugins; however, there are so
 
 ### Main Chat
 
-![Main Chat](https://i.imgur.com/Gb4aUDp.png)
+![Main Chat](https://i.imgur.com/Yhp7KWW.png)
 
 ### Direct Messages
 
