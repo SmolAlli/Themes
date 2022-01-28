@@ -95,31 +95,32 @@
 
 
 body,
-.appMount-3lHmkl .app-1q1i1E,
-.appMount-3lHmkl .app-2rEoOp,
-.appMount-3lHmkl .loading-Ags1CY,
-.appMount-3lHmkl .wrapper-1prNyd,
-.appMount-3lHmkl .bg-h5JY_x,
-.appMount-3lHmkl .layer-3QrUeG,
-.appMount-3lHmkl .container-3w7J-x,
-.appMount-3lHmkl .privateChannels-1nO12o,
-.appMount-3lHmkl .panels-j1Uci_ > *,
-.appMount-3lHmkl .chat-3bRxxu,
-.appMount-3lHmkl .threadSidebar-1o3BTy,
-.appMount-3lHmkl .wrapper-3vR61M,
-.appMount-3lHmkl .noChannel-Z1DQK7,
-.appMount-3lHmkl .members-1998pB,
-.appMount-3lHmkl .members-1998pB > div,
-.appMount-3lHmkl .content-MLh4nU,
-.appMount-3lHmkl .container-1D34oG,
-.appMount-3lHmkl .container-lRFx4q,
-.appMount-3lHmkl .applicationStore-1pNvnv,
-.appMount-3lHmkl .pageWrapper-1PgVDX,
-.appMount-3lHmkl .scrollerBase-289Jih,
-.appMount-3lHmkl .scroller-2FKFPG,
-.appMount-3lHmkl .standardSidebarView-3F1I7i,
-.appMount-3lHmkl .contentRegion-3nDuYy 
-.appMount-3lHmkl .membersWrap-2h-GB4 {
+.appMount-3lHmkl 
+:is(.app-1q1i1E,
+    .app-2rEoOp,
+    .loading-Ags1CY,
+    .wrapper-1prNyd,
+    .bg-h5JY_x,
+    .layer-3QrUeG,
+    .container-3w7J-x,
+    .privateChannels-1nO12o,
+    .panels-j1Uci_ > *,
+    .chat-3bRxxu,
+    .threadSidebar-1o3BTy,
+    .wrapper-3vR61M,
+    .noChannel-Z1DQK7,
+    .members-1998pB,
+    .members-1998pB > div,
+    .content-MLh4nU,
+    .container-1D34oG,
+    .container-lRFx4q,
+    .applicationStore-1pNvnv,
+    .pageWrapper-1PgVDX,
+    .scrollerBase-289Jih,
+    .scroller-2FKFPG,
+    .standardSidebarView-3F1I7i,
+    .contentRegion-3nDuYy 
+    .membersWrap-2h-GB4) {
     background: transparent;
 }
 
@@ -127,8 +128,7 @@ body,
 	border: none;
 }
 
-.appMount-3lHmkl .sidebarRegion-VFTUkN,							
-.appMount-3lHmkl .sidebar-_0OpfR {								
+.appMount-3lHmkl :is(.sidebarRegion-VFTUkN,	.sidebar-_0OpfR) {								
 	background-color: rgba(var(--transparency-color), calc(0.2 * (var(--transparency-alpha) / (var(--transparency-alpha) + 0.00000000000000000000001))));
 }
 
