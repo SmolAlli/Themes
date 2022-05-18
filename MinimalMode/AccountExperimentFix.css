@@ -1,0 +1,54 @@
+/**
+ * PLEASE PUT THIS INTO YOUR MinimalMode.theme.css if you have 
+ * The Account experiment enabled on your account which
+ * breaks the settings button's location, or if you just want
+ * the mute/deafen to only show when hovering on settings.
+ */
+
+/* Makes the mute and deafen buttons appear when hovering on the settings button */
+/* Thanks Disease for this! */
+
+.container-YkUktl>.flex-2S1XBF :not(:last-child) {
+    display:none;
+}
+
+.container-YkUktl>.flex-2S1XBF:hover :not(:last-child) {
+    display: flex;
+}
+
+.container-YkUktl .flex-2S1XBF:hover {
+    flex-direction: column;
+    margin-bottom: 64px;
+    z-index: 1;
+}
+
+.container-YkUktl .flex-2S1XBF:hover>:not(:last-child) {
+    background: var(--background-floating);
+    border-radius: 0px;
+}
+
+.container-YkUktl .flex-2S1XBF:hover>:first-child {
+    border-radius: 4px 4px 0px 0px;
+}
+
+.container-YkUktl .flex-2S1XBF:hover>:nth-child(2) {
+    border-radius: 0px 0px 4px 4px;
+}
+
+.container-YkUktl .flex-2S1XBF:hover>:last-child {
+    flex-direction: column;
+    z-index: 1;
+    background: var(--background-secondary-alt);
+    border-radius: 4px;
+}
+
+.button-12Fmur.enabled-9OeuTA:hover {
+    color: var(--interactive-hover) !important;
+    background-color: var(--background-modifier-selected) !important;
+}
+
+
+/* Changes the popout to not be very thin */
+.styleFixed-2_NfVL {
+    width: min(calc(var(--sidebar-width) + 40px), 300px);
+}
