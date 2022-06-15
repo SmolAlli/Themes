@@ -7,13 +7,15 @@ This theme can usually work with other themes and plugins; however, there are so
 Original contributers: Zerebos, Tropical, dav1312, Liberontissauri
 
 ## UPDATE (Important)
+
 I have added an extra file that you can import into your theme file if you have the new Accounts experiment, as this makes it so that the settings button is reachable, and gives you the choice (if it isn't broken) to have the mute/deafen buttons appear only on the settings button hover.
 To do this, please follow the instructions:
+
 1. Go to the themes tab by pressing `ctrl ,` and going to the Themes tab
 2. Open up the theme's source by clicking the edit button, which looks like a pencil, next to the remove button for this theme.
 3. Add this line directly underneath the `@import` for the main theme:
-`@import url('https://smolalli.github.io/Themes/MinimalMode/AccountExperimentFix.css');`
-4. Press "save" at the top left and you should now have access to the new CSS. If you do not, click the checkmark on the themes tab to disable the theme and re-enable it. 
+   `@import url('https://smolalli.github.io/Themes/MinimalMode/AccountExperimentFix.css');`
+4. Press "save" at the top left and you should now have access to the new CSS. If you do not, click the checkmark on the themes tab to disable the theme and re-enable it.
 
 ## Screenshots
 
