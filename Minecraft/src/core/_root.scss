@@ -1,0 +1,7 @@
+// The CSS to be included in your .theme.css file.
+// Addon @imports should be placed here instead of "src/core/_baseImport.scss".
+@import url("https://smolalli.github.io/Themes/Minecraft/resources/minecraft-fonts.css");
+
+:root {
+    --username-colour: red;
+}
