@@ -1,0 +1,297 @@
+:root {
+    color: var(--channels-default);
+
+    /* Variables */
+    --guildbar-width: 56px;
+    --sidebar-width: 200px;
+    --header-height: 40px;
+}
+
+/* Makes all member list/"channel information" areas work */
+.container-2Oqvgx {
+    width: auto;
+}
+
+.tabs-1RhQha {
+    padding: 10px 6px;
+    display: block;
+    height: fit-content;
+    max-height: none;
+}
+
+/* Sidebars */
+
+.sidebar-1tnWFu,
+.members-3WRCEx,
+.membersWrap-3NUR2t,
+.nowPlayingColumn-1eCBCN,
+.bannerImage-ubW8K-,
+.container-NkLXgf,
+.privateChannels-oVe7HL {
+    width: var(--sidebar-width);
+    min-width: auto;
+}
+
+/* Fixes overflow for unread bars */
+.unreadBottom-3Ojk6R > .bar-2eAyLE {
+    font-size: 10px;
+}
+
+.topPill-3DJJNV .item-3XjbnG {
+    margin: 0 4px 0 0;
+}
+
+/* User Container */
+
+.container-YkUktl .noWrap-hBpHBz {
+    display: none;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.container-YkUktl:hover .noWrap-hBpHBz {
+    display: flex;
+    opacity: 1;
+    pointer-events: all;
+}
+
+.container-YkUktl {
+    height: 45px;
+}
+
+/* Header container heights */
+
+.container-ZMc96U,
+.header-3OsQeK,
+.searchBar-3TnChZ {
+    height: var(--header-height);
+}
+
+.libraryHeader-2loraV::before {
+    top: var(--header-height);
+}
+
+/* Settings */
+
+.sidebarRegion-1VBisG {
+    flex: 0;
+}
+
+.contentColumn-1C7as6,
+.customColumn-2n-oKU {
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+.customScroller-m1-jZn > div,
+.sidebarScrollable-2mW9Ls + .content-2ssVKB {
+    max-width: unset;
+}
+
+.bd-addon-list {
+    &.bd-grid-view {
+        grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+    }
+    .bd-addon-card {
+        margin-bottom: 10px;
+    }
+}
+
+/* Friends (https://tropix126.github.io/BetterDiscordStuff/midnight/css/base.css) */
+
+@keyframes slide-out-enable {
+    0% {
+        pointer-events: none;
+    }
+
+    100% {
+        pointer-events: all;
+    }
+}
+
+.peopleColumn-1wMU14 {
+    margin-right: 50px;
+}
+
+@media (max-width: 1200px) {
+    .peopleColumn-1wMU14 {
+        margin-right: 0;
+    }
+}
+
+.nowPlayingColumn-1eCBCN {
+    min-width: unset;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 300px;
+    transform: translateX(250px);
+    background: var(--background-secondary-alt);
+    transition: 250ms cubic-bezier(0.52, 0, 0.74, 0);
+    z-index: 1;
+
+    &::after {
+        content: "|||";
+        color: var(--header-primary);
+        font-size: 12px;
+        position: absolute;
+        left: 25px;
+        top: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        transition: 250ms ease;
+    }
+
+    &:hover::after {
+        opacity: 0;
+    }
+
+    &:hover {
+        transform: none;
+    }
+    .nowPlayingScroller-12BxFW {
+        pointer-events: none;
+        opacity: 0;
+        transform: scale(0.95);
+        transition: 250ms cubic-bezier(0.52, 0, 0.74, 0);
+    }
+
+    &:hover .nowPlayingScroller-12BxFW {
+        opacity: 1;
+        transform: none;
+    }
+    .itemCard-3Etziu {
+        animation: slide-out-enable 450ms linear forwards;
+    }
+}
+
+/* Context menus (status picker) */
+
+.item-1OdjEX {
+    min-height: 18px;
+}
+
+.styleFixed-2_NfVL {
+    width: calc(var(--sidebar-width) - 20px);
+}
+
+.description-3Cwkxk {
+    display: none;
+}
+
+/* Tooltips */
+
+.tooltip-14MtrL {
+    border-radius: 4px;
+}
+
+.tooltipContent-Nejnvh {
+    padding: 4px 8px;
+    font-size: 13px;
+}
+
+/* Messages */
+
+.cozy-VmLDNB.wrapper-30-Nkg {
+    padding-left: 64px;
+    .avatar-2e8lTP {
+        transform: scale(0.75);
+        width: 32px;
+        height: 32px;
+        position: absolute !important;
+    }
+}
+
+.buttons-3dF5Kd {
+    transform: scale(0.75);
+    transform-origin: right;
+}
+
+/* Chat input */
+
+.form-3gdLxP {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Guilds */
+
+.guilds-2JjMmN {
+    width: var(--guildbar-width);
+    .wrapper-z5ab_q {
+        height: calc(var(--guildbar-width) * 0.625) !important;
+        span {
+            max-height: calc(var(--guildbar-width) * 0.375) !important;
+        }
+    }
+
+    div[style*="height: 56px"],
+    [role="group"] {
+        height: auto !important;
+    }
+
+    .listItem-GuPuDH,
+    [class*="unreadMentionsIndicator"],
+    .wrapper-3Njo_c {
+        width: 100%;
+    }
+
+    .wrapper-28eC3z,
+    [class*="guildsError-"],
+    svg[width="48"] {
+        width: calc(var(--guildbar-width) * 0.625) !important;
+        height: calc(var(--guildbar-width) * 0.625) !important;
+    }
+
+    .wrapper-3Njo_c > span {
+        left: calc(var(--guildbar-width) * 0.175) !important;
+        width: calc(var(--guildbar-width) * 0.625) !important;
+    }
+
+    #bd-pub-button {
+        height: calc(var(--guildbar-width) * 0.375) !important;
+        line-height: calc(var(--guildbar-width) * 0.375) !important;
+        font-size: 10px;
+    }
+}
+
+.listItem-3SmSlK {
+    width: var(--guildbar-width) !important;
+}
+
+/* Makes open folders look normal */
+.expandedFolderBackground-1kSAf6 {
+    left: calc(var(--guildbar-width) * 0.2) !important;
+    width: calc(var(--guildbar-width) * 0.625) !important;
+}
+
+/* Private channels horizontal icons */
+
+.channel-1Shao0:is([href="/channels/@me"], [href="/discovery"], [href="/library"], [href="/store"]) {
+    width: calc(25% - 8px);
+    margin-left: 8px;
+    padding: 0;
+    display: inline-block;
+
+    .content-1U25dZ,
+    .children-283-lq {
+        display: none;
+    }
+    .avatar-6qzftW {
+        margin: 0;
+        flex-grow: 1;
+    }
+}
+
+.layout-1qmrhw {
+    justify-content: center;
+}
+
+/* Compatibility for MembersList */
+#MemberCount {
+    width: auto !important;
+    margin-top: 0 !important;
+
+    .membersGroup-2eiWxl {
+        height: auto;
+    }
+}
