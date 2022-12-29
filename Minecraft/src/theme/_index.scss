@@ -1,24 +1,5 @@
-// Your theme...
-
-.nickname-t08Mck {
-    color: var(--username-colour) !important;
-    display: flex;
-    align-items: center;
-    &::before {
-        content: "";
-        display: block;
-        width: 24px;
-        height: 24px;
-        mask: url('data:image/svg+xml; utf-8,<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M12 14l9-5-9-5-9 5 9 5z" /><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" /></svg>');
-        background: var(--username-colour);
-        margin-right: 8px;
-    }
-}
-
-// my theme >:3
-
-@mixin resetOne() {
-    content: "";
+%resetOne {
+    content: '';
     position: fixed;
     top: 0;
     left: 0;
@@ -28,7 +9,7 @@
     z-index: -1;
 }
 
-@mixin button() {
+%button {
     background-color: var(--button-colour) !important;
     border: 3px solid var(--button-hover);
     border-radius: 0;
@@ -38,126 +19,17 @@
         --button-hover: white;
     }
 
-    &[class*="select"] {
+    &[class*='select'] {
         background-color: var(--button-colour-selected);
     }
 }
-
-:root {
-    --titlebar-height: 20px;
-    --background-img: url("https://smolalli.github.io/Themes/Minecraft/resources/backgrounds/main-background.png");
-    --titlebar-content-before: "Minecraft";
-    --titlebar-content-after: "Discord";
-    --transparency-color: 0, 0, 0;
-    --transparency-alpha: 0.15;
-    --message-transparency: 0.5;
-    --guild-channel-transparency: 0.15;
-    --member-list-transparency: 0.35;
-    --error-page-color: 50, 0, 0;
-    --error-page-transparency: 0.35;
-    --backdrop: rgba(0, 0, 0, 0.85);
-    --home-icon-image: url("https://smolalli.github.io/Themes/Minecraft/resources/grass_block.png");
-
-    --bg-1: url("https://smolalli.github.io/Themes/Minecraft/resources/backgrounds/background-1.png");
-    --bg-2: url("https://smolalli.github.io/Themes/Minecraft/resources/backgrounds/background-2.png");
-    --bg-3: url("https://smolalli.github.io/Themes/Minecraft/resources/backgrounds/background-3.png");
-    --bg-4: url("https://smolalli.github.io/Themes/Minecraft/resources/backgrounds/background-4.png");
-    --bg-5: url("https://smolalli.github.io/Themes/Minecraft/resources/backgrounds/background-5.png");
-    --bg-6: url("https://smolalli.github.io/Themes/Minecraft/resources/backgrounds/background-6.png");
-    --bg-7: url("https://smolalli.github.io/Themes/Minecraft/resources/backgrounds/background-7.png");
-    --bg-8: url("https://smolalli.github.io/Themes/Minecraft/resources/backgrounds/background-8.png");
-    --bg-9: url("https://smolalli.github.io/Themes/Minecraft/resources/backgrounds/background-9.png");
-
-    --bg-chat-area: var(--bg-1);
-
-    --scrollbar-auto-thumb: #c0c0c0;
-    --scrollbar-shadow-colour: #808080;
-    --scrollbar-auto-track: black;
-    --scrollbar-shadow-size: 3px;
-
-    --button-colour: #6f6f6f;
-    --button-hover: black;
-    --button-colour-selected: var(--scrollbar-auto-thumb);
-}
-
-* {
-    font-family: "Minecraft" !important;
-    border-radius: 0 !important;
-}
-
-/* .theme-dark {
-      --header-primary: #fff;
-      --header-secondary: #b9bbbe;
-      --text-normal: #dcddde;
-      --text-muted: #72767d;
-      --text-link: hsl(197,calc(var(--saturation-factor, 1)*100%),47.8%);
-      --text-link-low-saturation: hsl(197,calc(var(--saturation-factor, 1)*100%),52.9%);
-      --text-positive: hsl(139,calc(var(--saturation-factor, 1)*66.8%),58.6%);
-      --text-warning: hsl(38,calc(var(--saturation-factor, 1)*95.7%),54.1%);
-      --text-danger: hsl(359,calc(var(--saturation-factor, 1)*82.6%),59.4%);
-      --text-brand: hsl(235,calc(var(--saturation-factor, 1)*86.1%),77.5%);
-      --interactive-normal: #b9bbbe;
-      --interactive-hover: #dcddde;
-      --interactive-active: #fff;
-      --interactive-muted: #4f545c;
-      --background-primary: rgba(0,0,0,0);
-      --background-secondary: rgba(0,0,0,0);
-      --background-secondary-alt: rgba(0,0,0,0);
-      --background-tertiary: rgba(0,0,0,0);
-      --background-accent: rgba(0,0,0,0);
-      --background-floating: #000000;
-      --background-mobile-primary: rgba(0,0,0,0);
-      --background-mobile-secondary: rgba(0,0,0,0);
-      --background-modifier-hover: rgba(79,84,92,0.16);
-      --background-modifier-active: rgba(79,84,92,0.24);
-      --background-modifier-selected: rgba(79,84,92,0.32);
-      --background-modifier-accent: hsla(0,0%,100%,0.06);
-      --info-positive-text: #fff;
-      --info-warning-text: #fff;
-      --info-danger-text: #fff;
-      --info-help-background: hsla(197,calc(var(--saturation-factor, 1)*100%),47.8%,0.1);
-      --info-help-foreground: hsl(197,calc(var(--saturation-factor, 1)*100%),47.8%);
-      --info-help-text: #fff;
-      --status-warning-text: #000;
-      --scrollbar-thin-thumb: #202225;
-      --scrollbar-thin-track: rgba(0,0,0,0);
-      --scrollbar-auto-thumb: #202225;
-      --scrollbar-auto-track: hsl(210,calc(var(--saturation-factor, 1)*9.8%),20%);
-      --scrollbar-auto-scrollbar-color-thumb: #202225;
-      --scrollbar-auto-scrollbar-color-track: #2f3136;
-      --elevation-stroke: 0 0 0 1px rgba(4,4,5,0.15);
-      --elevation-low: 0 1px 0 rgba(4,4,5,0.2),0 1.5px 0 rgba(6,6,7,0.05),0 2px 0 rgba(4,4,5,0.05);
-      --elevation-medium: 0 4px 4px rgba(0,0,0,0.16);
-      --elevation-high: 0 8px 16px rgba(0,0,0,0.24);
-      --logo-primary: #fff;
-      --control-brand-foreground: hsl(235,calc(var(--saturation-factor, 1)*86.1%),77.5%);
-      --control-brand-foreground-new: hsl(235,calc(var(--saturation-factor, 1)*86.1%),77.5%);
-      --background-mentioned: hsla(38,calc(var(--saturation-factor, 1)*95.7%),54.1%,0.1);
-      --background-mentioned-hover: hsla(38,calc(var(--saturation-factor, 1)*95.7%),54.1%,0.08);
-      --background-message-hover: rgba(4,4,5,0.07);
-      --channels-default: #8e9297;
-      --guild-header-text-shadow: 0 1px 1px rgba(0,0,0,0.4);
-      --channeltextarea-background: #40444b;
-      --activity-card-background: #202225;
-      --textbox-markdown-syntax: #8e9297;
-      --deprecated-card-bg: rgba(32,34,37,0.6);
-      --deprecated-card-editable-bg: rgba(32,34,37,0.3);
-      --deprecated-store-bg: #36393f;
-      --deprecated-quickswitcher-input-background: #72767d;
-      --deprecated-quickswitcher-input-placeholder: hsla(0,0%,100%,0.3);
-      --deprecated-text-input-bg: rgba(0,0,0,0.1);
-      --deprecated-text-input-border: rgba(0,0,0,0.3);
-      --deprecated-text-input-border-hover: #040405;
-      --deprecated-text-input-border-disabled: #202225;
-      --deprecated-text-input-prefix: #dcddde;
-  } */
 
 body {
     background: transparent;
 
     &::before,
     &::after {
-        @include resetOne();
+        @extend %resetOne;
     }
 
     &::before {
@@ -170,10 +42,7 @@ body {
 }
 
 #app-mount {
-    background-color: rgba(
-        var(--transparency-color),
-        var(--transparency-alpha)
-    );
+    background-color: rgba(var(--transparency-color), var(--transparency-alpha));
 
     & .app-3xd6d0,
     .app-2CXKsg,
@@ -207,64 +76,37 @@ body {
     }
 
     .container-2o3qEW {
-        background-color: rgba(
-            var(--transparency-color),
-            var(--transparency-alpha)
-        );
+        background-color: rgba(var(--transparency-color), var(--transparency-alpha));
     }
     :is(.sidebarRegion-1VBisG, .sidebar-_0OpfR) {
         background-color: rgba(
             var(--transparency-color),
-            calc(
-                0.2 *
-                    (
-                        var(--transparency-alpha) /
-                            (var(--transparency-alpha) + 0.01)
-                    )
-            )
+            calc(0.2 * (var(--transparency-alpha) / (var(--transparency-alpha) + 0.01)))
         );
     }
     .wrapper-1_HaEi {
-        background-color: rgba(
-            var(--transparency-color),
-            calc(var(--guild-channel-transparency) * 2)
-        );
+        background-color: rgba(var(--transparency-color), calc(var(--guild-channel-transparency) * 2));
     }
     .panels-3wFtMD {
-        background-color: rgba(
-            var(--transparency-color),
-            calc(var(--guild-channel-transparency) / 1.5)
-        );
+        background-color: rgba(var(--transparency-color), calc(var(--guild-channel-transparency) / 1.5));
     }
 
-    .wrapper-3NnKdC {
-        background-color: rgba(
-            var(--transparency-color),
-            calc(var(--guild-channel-transparency) * 2)
-        );
+    .wrapper-1_HaEi {
+        background-color: rgba(var(--transparency-color), calc(var(--guild-channel-transparency) * 2));
     }
 
     .sidebar-1tnWFu,
     .container-ZMc96U.themed-Hp1KC_ {
-        background-color: rgba(
-            var(--transparency-color),
-            var(--guild-channel-transparency)
-        );
+        background-color: rgba(var(--transparency-color), var(--guild-channel-transparency));
     }
 
-    .panels-j1Uci_ {
-        background-color: rgba(
-            var(--transparency-color),
-            calc(var(--guild-channel-transparency) / 1.5)
-        );
+    .panels-3wFtMD {
+        background-color: rgba(var(--transparency-color), calc(var(--guild-channel-transparency) / 1.5));
     }
 
     .tabBar-fg4VK9,
-    .nowPlayingColumn-2sl4cE {
-        background-color: rgba(
-            var(--transparency-color),
-            var(--member-list-transparency)
-        );
+    .nowPlayingColumn-1eCBCN {
+        background-color: rgba(var(--transparency-color), var(--member-list-transparency));
     }
 
     .container-2o3qEW::before,
@@ -273,7 +115,7 @@ body {
     .container-2o3qEW::after,
     .layer-86YKbF ~ .layer-86YKbF::after,
     .root-2zfUH6::after {
-        @include resetOne();
+        @extend %resetOne;
     }
 
     .container-2RRFHK {
@@ -294,10 +136,7 @@ body {
     .container-2o3qEW::after,
     .layer-86YKbF ~ .layer-86YKbF::after,
     .root-2zfUH6::after {
-        background-color: rgba(
-            var(--transparency-color),
-            var(--transparency-alpha)
-        );
+        background-color: rgba(var(--transparency-color), var(--transparency-alpha));
         backdrop-filter: blur(unset);
     }
 
@@ -315,7 +154,7 @@ body {
     .uploadArea-2Nu_Vc::after,
     .backdrop-1BR_bn::after,
     .backdrop-2ByYRN::after {
-        content: "";
+        content: '';
         position: absolute;
         top: 0;
         left: 0;
@@ -358,16 +197,6 @@ body {
         padding: 10px 0 0 4px;
         line-height: 20px;
         font-size: 0.9em;
-    }
-
-    .wordmark-2u86JB::before,
-    .wordmark-2u86JB::after {
-        position: relative;
-        width: auto;
-        height: 22px;
-    }
-
-    .wordmark-2u86JB {
         top: 0;
         left: 0;
         padding: 0 3px;
@@ -376,34 +205,38 @@ body {
         height: var(--titlebar-height);
         display: flex;
         align-items: center;
-    }
 
-    .wordmark-2u86JB::before {
-        content: var(--titlebar-content-before);
-        height: var(--titlebar-height);
-        z-index: 1;
-        position: relative;
-        color: #fff;
-        font-weight: bold;
-        opacity: 0.8;
-        padding: 0 3px;
-        line-height: 15px;
-    }
+        &::before {
+            content: var(--titlebar-content-before);
+            height: var(--titlebar-height);
+            z-index: 1;
+            position: relative;
+            color: #fff;
+            font-weight: bold;
+            opacity: 0.8;
+            padding: 0 3px;
+            line-height: 15px;
+        }
 
-    .wordmark-2u86JB::after {
-        content: var(--titlebar-content-after);
-        height: var(--titlebar-height);
-        z-index: 1;
-        height: var(--titlebar-height);
-        z-index: 1;
-        position: relative;
-        color: #fff;
-        opacity: 0.8;
-        line-height: 15px;
-    }
+        &::after {
+            content: var(--titlebar-content-after);
+            height: var(--titlebar-height);
+            z-index: 1;
+            position: relative;
+            color: #fff;
+            opacity: 0.8;
+            line-height: 15px;
+        }
+        &::before,
+        &::after {
+            position: relative;
+            width: auto;
+            height: 22px;
+        }
 
-    .wordmark-2u86JB svg {
-        display: none;
+        svg {
+            display: none;
+        }
     }
 
     .channelIcon-3I2O7O {
@@ -411,7 +244,7 @@ body {
     }
 
     .iconMention-3WxjBe::before {
-        content: "#";
+        content: '#';
     }
 
     .iconMention-3WxjBe {
@@ -427,6 +260,10 @@ body {
     .message-2CShn3.selected-2LX7Jy,
     .mouse-mode.full-motion .message-2CShn3:hover,
     .reaction-2A2y9y {
+        background-color: rgba(0, 0, 0, 0.65);
+    }
+
+    .scrollerInner-2PPAp2 .groupStart-3Mlgv1.expanded-3lghlw {
         background-color: rgba(0, 0, 0, 0.65);
     }
 
@@ -449,9 +286,8 @@ body {
      * Black border
      * White on hover
      */
-    .layer-86YKbF:not([class*="baseLayer"])
-        .item-3XjbnG:not(.tabBarItem-3nPo4Z) {
-        @include button();
+    .layer-86YKbF:not([class*='baseLayer']) .item-3XjbnG:not(.tabBarItem-3nPo4Z) {
+        @extend %button;
 
         & > .background-Gjdjzm {
             display: none;
@@ -466,18 +302,18 @@ body {
         }
     }
 
-    [class*="avatar"],
-    [class*="Avatar"],
-    [role="group"],
-    [class="expandedFolderBackground"] ~ [class="listItem"] {
+    [class*='avatar'],
+    [class*='Avatar'],
+    [role='group'],
+    [class='expandedFolderBackground'] ~ [class='listItem'] {
         mask: none;
         *:not(rect) {
             mask: none;
         }
     }
 
-    [class*="mask"]:not(rect),
-    [role="group"],
+    [class*='mask']:not(rect),
+    [role='group'],
     foreignObject[mask] {
         mask: none;
         *:not(rect) {
@@ -504,7 +340,7 @@ body {
 
 .chat-2ZfjoI .chatContent-3KubbW::before,
 .chat-2ZfjoI .chatContent-3KubbW::after {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -526,7 +362,7 @@ body {
 .contentRegionShownSidebar-fHXkEg,
 .auto-2K3UW5,
 .scrollerBase-_bVAAt {
-    /* Thanks Discord for thinking that the scrollbar should always be shown. */
+    /* Thanks Discord for thinking that the scrollbar should always be shown.*/
     overflow-y: auto !important;
 }
 .auto-2K3UW5 {
@@ -536,8 +372,7 @@ body {
     }
     &::-webkit-scrollbar-thumb {
         background-clip: content-box;
-        box-shadow: 0 0 transparent inset,
-            0 -3px var(--scrollbar-shadow-colour) inset,
+        box-shadow: 0 0 transparent inset, 0 -3px var(--scrollbar-shadow-colour) inset,
             -3px 0 var(--scrollbar-shadow-colour) inset, 0 0 transparent inset;
     }
     &::-webkit-scrollbar-thumb,
@@ -548,20 +383,17 @@ body {
     }
 }
 
-#app-mount [class*="errorPage"] {
-    background-color: rgba(
-        var(--error-page-color),
-        var(--error-page-transparency)
-    );
-    [class*="image"] {
+#app-mount [class*='errorPage'] {
+    background-color: rgba(var(--error-page-color), var(--error-page-transparency));
+    [class*='image'] {
         display: none;
-        & ~ [class*="text"] {
-            [class*="title"] {
+        & ~ [class*='text'] {
+            [class*='title'] {
                 visibility: hidden;
                 // position: absolute;
                 font-size: 0;
                 &:after {
-                    content: "You died!";
+                    content: 'You died!';
                     visibility: visible;
                     font-size: 30px;
                     line-height: 8px;
@@ -573,7 +405,7 @@ body {
                     line-height: initial;
                 }
             }
-            [class*="note"] p {
+            [class*='note'] p {
                 visibility: hidden;
                 font-size: 0;
                 &:after {
@@ -583,21 +415,21 @@ body {
                     color: var(--text-muted);
                 }
                 &:first-child:after {
-                    content: "It appears that your Discord client has crashed.";
+                    content: 'It appears that your Discord client has crashed.';
                 }
                 & ~ p:after {
-                    content: "Please join the BetterDiscord server at https://betterdiscord.app/invite for information.";
+                    content: 'Please join the BetterDiscord server at https://betterdiscord.app/invite for information.';
                 }
             }
         }
     }
-    [class*="button"] {
-        @include button();
-        [class*="contents"] {
+    [class*='button'] {
+        @extend %button;
+        [class*='contents'] {
             visibility: hidden;
             font-size: 0;
             &:after {
-                content: "Respawn";
+                content: 'Respawn';
                 visibility: visible;
                 margin: 0 auto;
                 white-space: nowrap;

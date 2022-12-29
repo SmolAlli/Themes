@@ -3,5 +3,110 @@
 @import url("https://smolalli.github.io/Themes/Minecraft/resources/minecraft-fonts.css");
 
 :root {
-    --username-colour: red;
+    --titlebar-height: 20px;
+    --background-img: url("https://smolalli.github.io/Themes/Minecraft/resources/backgrounds/main-background.png");
+    --titlebar-content-before: "Minecraft";
+    --titlebar-content-after: "Discord";
+    --transparency-color: 0, 0, 0;
+    --transparency-alpha: 0.15;
+    --message-transparency: 0.5;
+    --guild-channel-transparency: 0.15;
+    --member-list-transparency: 0.35;
+    --error-page-color: 50, 0, 0;
+    --error-page-transparency: 0.35;
+    --backdrop: rgba(0, 0, 0, 0.85);
+    --home-icon-image: url("https://smolalli.github.io/Themes/Minecraft/resources/grass_block.png");
+
+    --bg-1: url("https://smolalli.github.io/Themes/Minecraft/resources/backgrounds/background-1.png");
+    --bg-2: url("https://smolalli.github.io/Themes/Minecraft/resources/backgrounds/background-2.png");
+    --bg-3: url("https://smolalli.github.io/Themes/Minecraft/resources/backgrounds/background-3.png");
+    --bg-4: url("https://smolalli.github.io/Themes/Minecraft/resources/backgrounds/background-4.png");
+    --bg-5: url("https://smolalli.github.io/Themes/Minecraft/resources/backgrounds/background-5.png");
+    --bg-6: url("https://smolalli.github.io/Themes/Minecraft/resources/backgrounds/background-6.png");
+    --bg-7: url("https://smolalli.github.io/Themes/Minecraft/resources/backgrounds/background-7.png");
+    --bg-8: url("https://smolalli.github.io/Themes/Minecraft/resources/backgrounds/background-8.png");
+    --bg-9: url("https://smolalli.github.io/Themes/Minecraft/resources/backgrounds/background-9.png");
+
+    --bg-chat-area: var(--bg-1);
+
+    --scrollbar-auto-thumb: #c0c0c0;
+    --scrollbar-shadow-colour: #808080;
+    --scrollbar-auto-track: black;
+    --scrollbar-shadow-size: 3px;
+
+    --button-colour: #6f6f6f;
+    --button-hover: black;
+    --button-colour-selected: var(--scrollbar-auto-thumb);
 }
+
+* {
+    font-family: "Minecraft" !important;
+    border-radius: 0 !important;
+}
+
+/* .theme-dark {
+      --header-primary: #fff;
+      --header-secondary: #b9bbbe;
+      --text-normal: #dcddde;
+      --text-muted: #72767d;
+      --text-link: hsl(197,calc(var(--saturation-factor, 1)*100%),47.8%);
+      --text-link-low-saturation: hsl(197,calc(var(--saturation-factor, 1)*100%),52.9%);
+      --text-positive: hsl(139,calc(var(--saturation-factor, 1)*66.8%),58.6%);
+      --text-warning: hsl(38,calc(var(--saturation-factor, 1)*95.7%),54.1%);
+      --text-danger: hsl(359,calc(var(--saturation-factor, 1)*82.6%),59.4%);
+      --text-brand: hsl(235,calc(var(--saturation-factor, 1)*86.1%),77.5%);
+      --interactive-normal: #b9bbbe;
+      --interactive-hover: #dcddde;
+      --interactive-active: #fff;
+      --interactive-muted: #4f545c;
+      --background-primary: rgba(0,0,0,0);
+      --background-secondary: rgba(0,0,0,0);
+      --background-secondary-alt: rgba(0,0,0,0);
+      --background-tertiary: rgba(0,0,0,0);
+      --background-accent: rgba(0,0,0,0);
+      --background-floating: #000000;
+      --background-mobile-primary: rgba(0,0,0,0);
+      --background-mobile-secondary: rgba(0,0,0,0);
+      --background-modifier-hover: rgba(79,84,92,0.16);
+      --background-modifier-active: rgba(79,84,92,0.24);
+      --background-modifier-selected: rgba(79,84,92,0.32);
+      --background-modifier-accent: hsla(0,0%,100%,0.06);
+      --info-positive-text: #fff;
+      --info-warning-text: #fff;
+      --info-danger-text: #fff;
+      --info-help-background: hsla(197,calc(var(--saturation-factor, 1)*100%),47.8%,0.1);
+      --info-help-foreground: hsl(197,calc(var(--saturation-factor, 1)*100%),47.8%);
+      --info-help-text: #fff;
+      --status-warning-text: #000;
+      --scrollbar-thin-thumb: #202225;
+      --scrollbar-thin-track: rgba(0,0,0,0);
+      --scrollbar-auto-thumb: #202225;
+      --scrollbar-auto-track: hsl(210,calc(var(--saturation-factor, 1)*9.8%),20%);
+      --scrollbar-auto-scrollbar-color-thumb: #202225;
+      --scrollbar-auto-scrollbar-color-track: #2f3136;
+      --elevation-stroke: 0 0 0 1px rgba(4,4,5,0.15);
+      --elevation-low: 0 1px 0 rgba(4,4,5,0.2),0 1.5px 0 rgba(6,6,7,0.05),0 2px 0 rgba(4,4,5,0.05);
+      --elevation-medium: 0 4px 4px rgba(0,0,0,0.16);
+      --elevation-high: 0 8px 16px rgba(0,0,0,0.24);
+      --logo-primary: #fff;
+      --control-brand-foreground: hsl(235,calc(var(--saturation-factor, 1)*86.1%),77.5%);
+      --control-brand-foreground-new: hsl(235,calc(var(--saturation-factor, 1)*86.1%),77.5%);
+      --background-mentioned: hsla(38,calc(var(--saturation-factor, 1)*95.7%),54.1%,0.1);
+      --background-mentioned-hover: hsla(38,calc(var(--saturation-factor, 1)*95.7%),54.1%,0.08);
+      --background-message-hover: rgba(4,4,5,0.07);
+      --channels-default: #8e9297;
+      --guild-header-text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+      --channeltextarea-background: #40444b;
+      --activity-card-background: #202225;
+      --textbox-markdown-syntax: #8e9297;
+      --deprecated-card-bg: rgba(32,34,37,0.6);
+      --deprecated-card-editable-bg: rgba(32,34,37,0.3);
+      --deprecated-store-bg: #36393f;
+      --deprecated-quickswitcher-input-background: #72767d;
+      --deprecated-quickswitcher-input-placeholder: hsla(0,0%,100%,0.3);
+      --deprecated-text-input-bg: rgba(0,0,0,0.1);
+      --deprecated-text-input-border: rgba(0,0,0,0.3);
+      --deprecated-text-input-border-hover: #040405;
+      --deprecated-text-input-border-disabled: #202225;
+      --deprecated-text-input-prefix: #dcddde;
+  } */

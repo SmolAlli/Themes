@@ -1,0 +1,11 @@
+// The CSS to be included in your .theme.css file.
+// Addon @imports should be placed here instead of "src/core/_baseImport.scss".
+
+:root {
+    --accent-colour: rgb(4, 57, 94);
+    --background-colour: rgb(30, 30, 30);
+    --secondary-colour: rgb(37, 37, 38);
+    --side-colour: rgb(48, 48, 49);
+    --icon-colour: rgba(var(--icon-colour-hover), 0.4);
+    --icon-colour-hover: rgb(255, 255, 255);
+}
