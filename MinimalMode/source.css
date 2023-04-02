@@ -33,7 +33,7 @@
 }
 
 /* Fixes overflow for unread bars */
-.unreadBottom-3Ojk6R > .bar-2eAyLE {
+.unreadBottom-3Ojk6R>.bar-2eAyLE {
   font-size: 10px;
 }
 
@@ -80,14 +80,15 @@
   max-width: 100%;
 }
 
-.customScroller-m1-jZn > div,
-.sidebarScrollable-2mW9Ls + .content-2ssVKB {
+.customScroller-m1-jZn>div,
+.sidebarScrollable-2mW9Ls+.content-2ssVKB {
   max-width: unset;
 }
 
 .bd-addon-list.bd-grid-view {
   grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
 }
+
 .bd-addon-list .bd-addon-card {
   margin-bottom: 10px;
 }
@@ -97,10 +98,12 @@
   0% {
     pointer-events: none;
   }
+
   100% {
     pointer-events: all;
   }
 }
+
 .peopleColumn-1wMU14 {
   margin-right: 50px;
 }
@@ -110,6 +113,7 @@
     margin-right: 0;
   }
 }
+
 .nowPlayingColumn-1eCBCN {
   min-width: unset;
   position: absolute;
@@ -121,6 +125,7 @@
   transition: 250ms cubic-bezier(0.52, 0, 0.74, 0);
   z-index: 1;
 }
+
 .nowPlayingColumn-1eCBCN::after {
   content: "|||";
   color: var(--header-primary);
@@ -131,22 +136,27 @@
   transform: translateY(-50%) translateX(-50%);
   transition: 250ms ease;
 }
+
 .nowPlayingColumn-1eCBCN:hover::after {
   opacity: 0;
 }
+
 .nowPlayingColumn-1eCBCN:hover {
   transform: none;
 }
+
 .nowPlayingColumn-1eCBCN .nowPlayingScroller-12BxFW {
   pointer-events: none;
   opacity: 0;
   transform: scale(0.95);
   transition: 250ms cubic-bezier(0.52, 0, 0.74, 0);
 }
+
 .nowPlayingColumn-1eCBCN:hover .nowPlayingScroller-12BxFW {
   opacity: 1;
   transform: none;
 }
+
 .nowPlayingColumn-1eCBCN .itemCard-3Etziu {
   animation: slide-out-enable 450ms linear forwards;
 }
@@ -178,6 +188,7 @@
 .cozy-VmLDNB.wrapper-30-Nkg {
   padding-left: 64px;
 }
+
 .cozy-VmLDNB.wrapper-30-Nkg .avatar-2e8lTP {
   transform: scale(0.75);
   width: 32px;
@@ -196,49 +207,61 @@
   padding-right: 10px;
 }
 
-/* Guilds */
+:root {
+  color: var(--channels-default);
+  /* Variables */
+  --guildbar-width: 56px;
+  --sidebar-width: 200px;
+  --header-height: 40px;
+}
+
 .guilds-2JjMmN {
   width: var(--guildbar-width);
 }
+
+/* pills */
 .guilds-2JjMmN .wrapper-z5ab_q {
   height: calc(var(--guildbar-width) * 0.625) !important;
 }
+
 .guilds-2JjMmN .wrapper-z5ab_q span {
   max-height: calc(var(--guildbar-width) * 0.375) !important;
 }
-.guilds-2JjMmN div[style*="height: 56px"],
-.guilds-2JjMmN [role=group] {
-  height: auto !important;
-}
-.guilds-2JjMmN .listItem-GuPuDH,
+
+.guilds-2JjMmN .listItem-3SmSlK,
 .guilds-2JjMmN [class*=unreadMentionsIndicator],
 .guilds-2JjMmN .wrapper-3Njo_c {
   width: 100%;
 }
-.guilds-2JjMmN .wrapper-28eC3z,
+
+.guilds-2JjMmN .wrapper-2PSQCG,
 .guilds-2JjMmN [class*=guildsError-],
 .guilds-2JjMmN svg[width="48"] {
   width: calc(var(--guildbar-width) * 0.625) !important;
   height: calc(var(--guildbar-width) * 0.625) !important;
 }
-.guilds-2JjMmN .wrapper-3Njo_c > span {
-  left: calc(var(--guildbar-width) * 0.175) !important;
-  width: calc(var(--guildbar-width) * 0.625) !important;
-}
-.guilds-2JjMmN #bd-pub-button {
-  height: calc(var(--guildbar-width) * 0.375) !important;
-  line-height: calc(var(--guildbar-width) * 0.375) !important;
-  font-size: 10px;
-}
-
-.listItem-3SmSlK {
-  width: var(--guildbar-width) !important;
-}
 
 /* Makes open folders look normal */
-.expandedFolderBackground-1kSAf6 {
+.guilds-2JjMmN .wrapper-38slSD>span {
   left: calc(var(--guildbar-width) * 0.2) !important;
   width: calc(var(--guildbar-width) * 0.625) !important;
+  bottom: 0px;
+}
+
+.guilds-2JjMmN .wrapper-38slSD {
+  width: unset;
+}
+
+.guilds-2JjMmN [class*="tutorialContainer"]+div {
+  height: unset !important;
+}
+
+.guilds-2JjMmN .lowerBadge-3j0ZAg {
+  transform: scale(.85) translate(3px, 3px) !important;
+}
+
+.guilds-2JjMmN .wrapper-38slSD>ul {
+  height: fit-content !important;
 }
 
 /* Private channels horizontal icons */
@@ -248,10 +271,12 @@
   padding: 0;
   display: inline-block;
 }
+
 .channel-1Shao0:is([href="/channels/@me"], [href="/discovery"], [href="/library"], [href="/store"]) .content-1U25dZ,
 .channel-1Shao0:is([href="/channels/@me"], [href="/discovery"], [href="/library"], [href="/store"]) .children-283-lq {
   display: none;
 }
+
 .channel-1Shao0:is([href="/channels/@me"], [href="/discovery"], [href="/library"], [href="/store"]) .avatar-6qzftW {
   margin: 0;
   flex-grow: 1;
@@ -266,6 +291,7 @@
   width: auto !important;
   margin-top: 0 !important;
 }
+
 #MemberCount .membersGroup-2eiWxl {
   height: auto;
 }
