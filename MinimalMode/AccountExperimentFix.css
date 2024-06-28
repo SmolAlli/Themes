@@ -8,6 +8,11 @@
 /* Makes the mute and deafen buttons appear when hovering on the settings button */
 /* Thanks Disease for this! */
 
+:root {
+    --icon-height: 32px;
+    --added-icons: 0;
+}
+
 .container_b2ca13 > .flex_bba380 :not(:last-child) {
     display: none;
 }
@@ -18,7 +23,7 @@
 
 .container_b2ca13 .flex_bba380:hover {
     flex-direction: column;
-    margin-bottom: 64px;
+    margin-bottom: calc(((var(--added-icons) + 2) * var(--icon-height))); /* Compatibility for GameActivityToggle etc. */
     z-index: 1;
 }
 
