@@ -1,5 +1,3 @@
-@import url('https://smolalli.github.io/Themes/MinimalMode/AccountExperimentFix.css');
-
 :root {
   color: var(--channels-default);
   /* Variables */
@@ -227,10 +225,6 @@
 .guilds_a4d4d9 svg[width="48"] {
   width: calc(var(--guildbar-width) * 0.625) !important;
   height: calc(var(--guildbar-width) * 0.625) !important;
-}
-.guilds_a4d4d9 .wrapper_bc7085 > span {
-  left: calc(var(--guildbar-width) * 0.175) !important;
-  width: calc(var(--guildbar-width) * 0.625) !important;
 }
 .guilds_a4d4d9 #bd-pub-button {
   height: calc(var(--guildbar-width) * 0.375) !important;
