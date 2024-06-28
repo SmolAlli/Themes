@@ -6,7 +6,15 @@ This theme can usually work with other themes and plugins; however, there are so
 
 Original contributers: Zerebos, Tropical, dav1312, Liberontissauri
 
+## Compatible Plugins
+
+- MembersCount
+- GameActivityToggle (add `:root{--added-icons: 1}` to CSS file)
+    * This will work for any plugin that adds a button to the settings button area. Will need to change the number based on added icons. 
+
 ## Screenshots
+
+_Note: these are outdated_
 
 ### Main Chat
 
