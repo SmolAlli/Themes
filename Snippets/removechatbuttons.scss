@@ -1,0 +1,61 @@
+:root {
+    --gift: flex;
+    --gif: flex;
+    --sticker: flex;
+    --emoji: flex;
+    --upload: flex;
+    --invite: block;
+    --store: flex;
+    --shop: flex;
+    --friends: flex;
+}
+
+// Invite button
+#channels [aria-label="Create Invite"] {
+    display: var(--invite);
+}
+
+// Chat buttons
+[class*='form-'] {
+    // Upload
+    [class*='attachButton_'] {
+        display: var(--upload);
+    }
+
+    [class*='button_'] {
+        // Gift
+        &[aria-label='Send a gift'] {
+            display: var(--gift);
+        }
+
+        // GIF
+        &[aria-label='Open GIF picker'] {
+            display: var(--gif);
+        }
+
+        // Sticker
+        &[aria-label='Open sticker picker'] {
+            display: var(--sticker);
+        }
+
+        // Emoji
+        &[aria-label='Select emoji'] {
+            display: var(--emoji);
+        }
+    }
+}
+
+// DM Buttons
+[class*="privateChannels_"] {
+    [href="/channels/@me"] {
+         display: var(--friends);
+    }
+    [href="/store"] {
+        display: var(--store);
+    }
+    [href="/shop"] {
+        display: var(--shop);}
+
+}
+
+//  display: var(--);

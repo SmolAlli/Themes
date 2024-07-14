@@ -1,0 +1,43 @@
+:root {
+  --gift: flex;
+  --gif: flex;
+  --sticker: flex;
+  --emoji: flex;
+  --upload: flex;
+  --invite: block;
+  --store: flex;
+  --shop: flex;
+  --friends: flex;
+}
+
+#channels [aria-label="Create Invite"] {
+  display: var(--invite);
+}
+
+[class*=form-] [class*=attachButton_] {
+  display: var(--upload);
+}
+[class*=form-] [class*=button_][aria-label="Send a gift"] {
+  display: var(--gift);
+}
+[class*=form-] [class*=button_][aria-label="Open GIF picker"] {
+  display: var(--gif);
+}
+[class*=form-] [class*=button_][aria-label="Open sticker picker"] {
+  display: var(--sticker);
+}
+[class*=form-] [class*=button_][aria-label="Select emoji"] {
+  display: var(--emoji);
+}
+
+[class*=privateChannels_] [href="/channels/@me"] {
+  display: var(--friends);
+}
+[class*=privateChannels_] [href="/store"] {
+  display: var(--store);
+}
+[class*=privateChannels_] [href="/shop"] {
+  display: var(--shop);
+}
+
+/*# sourceMappingURL=removechatbuttons.css.map */
