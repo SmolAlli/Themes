@@ -14,7 +14,6 @@
   --members: block;
   --events: block;
   --server-shop: block;
-  --server-sub: block;
   --boost: flex;
 }
 
@@ -38,9 +37,6 @@
 }
 #channels [class*=containerDefault_]:has([aria-label="Server Shop"]) {
   display: var(--server-shop);
-}
-#channels [class*=containerDefault_]:has([aria-label="Server Subscriptions"]) {
-  display: var(--server-sub);
 }
 #channels [data-list-item-id*=channels___boosts-] {
   display: var(--boost);
