@@ -12,6 +12,9 @@
   --channels: block;
   --browse: block;
   --members: block;
+  --events: block;
+  --server-shop: block;
+  --server-sub: block;
   --boost: flex;
 }
 
@@ -29,6 +32,15 @@
 }
 #channels [class*=containerDefault_]:has([aria-label=Members]) {
   display: var(--members);
+}
+#channels [class*=containerDefault_]:has([data-list-item-id*=channels___upcoming-events-]) {
+  display: var(--events);
+}
+#channels [class*=containerDefault_]:has([aria-label="Server Shop"]) {
+  display: var(--server-shop);
+}
+#channels [class*=containerDefault_]:has([aria-label="Server Subscriptions"]) {
+  display: var(--server-sub);
 }
 #channels [data-list-item-id*=channels___boosts-] {
   display: var(--boost);

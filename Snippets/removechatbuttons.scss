@@ -12,6 +12,9 @@
     --channels: block;
     --browse: block;
     --members: block;
+    --events: block;
+    --server-shop: block;
+    --server-sub: block;
     --boost: flex;
 }
 
@@ -34,6 +37,15 @@
         }
         &:has([aria-label='Members']) {
             display: var(--members);
+        }
+        &:has([data-list-item-id*='channels___upcoming-events-']) {
+            display: var(--events);
+        }
+        &:has([aria-label='Server Shop']) {
+            display: var(--server-shop);
+        }
+        &:has([aria-label='Server Subscriptions']) {
+            display: var(--server-sub);
         }
     }
 
