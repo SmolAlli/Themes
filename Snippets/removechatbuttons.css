@@ -8,10 +8,30 @@
   --store: flex;
   --shop: flex;
   --friends: flex;
+  --guide: block;
+  --channels: block;
+  --browse: block;
+  --members: block;
+  --boost: flex;
 }
 
 #channels [aria-label="Create Invite"] {
   display: var(--invite);
+}
+#channels [class*=containerDefault_]:has([aria-label="Server Guide"]) {
+  display: var(--guide);
+}
+#channels [class*=containerDefault_]:has([aria-label="Channels & Roles"]) {
+  display: var(--channels);
+}
+#channels [class*=containerDefault_]:has([aria-label="Browse Channels"]) {
+  display: var(--browse);
+}
+#channels [class*=containerDefault_]:has([aria-label=Members]) {
+  display: var(--members);
+}
+#channels [data-list-item-id*=channels___boosts-] {
+  display: var(--boost);
 }
 
 [class*=form-] [class*=attachButton_] {
