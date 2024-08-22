@@ -15,6 +15,7 @@
   --events: block;
   --server-shop: block;
   --boost: flex;
+  --activity: block;
 }
 
 #channels [aria-label="Create Invite"] {
@@ -56,6 +57,9 @@
 }
 [class*=form-] [class*=button_][aria-label="Select emoji"] {
   display: var(--emoji);
+}
+[class*=form-] [class*=channelAppLauncher_] {
+  display: var(--activity);
 }
 
 [class*=privateChannels_] [href="/channels/@me"] {

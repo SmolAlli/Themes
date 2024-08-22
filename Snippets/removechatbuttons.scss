@@ -15,6 +15,7 @@
     --events: block;
     --server-shop: block;
     --boost: flex;
+    --activity: block;
 }
 
 // Channels sidebar
@@ -77,6 +78,10 @@
         &[aria-label='Select emoji'] {
             display: var(--emoji);
         }
+    }
+
+    [class*='channelAppLauncher_'] {
+        display: var(--activity);
     }
 }
 
