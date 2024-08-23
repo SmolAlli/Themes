@@ -7,6 +7,7 @@
     --guildbar-width: 56px;
     --sidebar-width: 200px;
     --header-height: 40px;
+    --avatar-size: 32px;
 }
 
 /* Makes all member list/"channel information" areas work */
@@ -209,9 +210,16 @@
 
     .avatar_f9f2ca {
         transform: scale(0.75);
-        width: 32px;
-        height: 32px;
+        width: var(--avatar-size);
+        height: var(--avatar-size);
         position: absolute !important;
+    }
+
+    .avatarDecoration_f9f2ca {
+        transform: scale(0.75);
+        width: var(--avatar-size);
+        height: var(--avatar-size);
+        left: calc(var(--custom-message-margin-horizontal) - ((var(--avatar-size) * 1.2) - var(--avatar-size)) / 2);
     }
 }
 
@@ -282,6 +290,15 @@
         left: calc(var(--guildbar-width) * 0.2) !important;
         width: calc(var(--guildbar-width) * 0.625) !important;
         --custom-folder-item-guild-icon-margin: 0px;
+    }
+
+    /* Pings on DMs/servers */
+    .numberBadge_df8943 {
+        min-height: 12px;
+        min-width: 12px;
+        height: 12px;
+        width: 12px !important;
+        font-size: 10px;
     }
 }
 
