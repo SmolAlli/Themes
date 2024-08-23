@@ -35,7 +35,7 @@
 }
 
 /* Fixes overflow for unread bars */
-.unreadBottom__6be9f>.bar_c10249 {
+.unreadBottom__6be9f>.bar_edf32f {
     font-size: 10px;
 }
 
@@ -63,7 +63,7 @@
 
 /* Header container heights */
 
-.container_e44302,
+.container_fc4f04,
 .header_fd6364,
 .searchBar_f0963d {
     height: var(--header-height);
@@ -94,7 +94,7 @@
 }
 
 .customScroller_c25c6d>div,
-.sidebarScrollable_e9196a+.content_e9196a {
+.sidebarScrollable_ff90b2+.content_ff90b2 {
     max-width: unset;
 }
 
@@ -204,10 +204,10 @@
 
 /* Messages */
 
-.cozy_ec86aa.wrapper_ec86aa {
+.cozy_f9f2ca.wrapper_f9f2ca {
     padding-left: 64px;
 
-    .avatar_ec86aa {
+    .avatar_f9f2ca {
         transform: scale(0.75);
         width: 32px;
         height: 32px;
@@ -232,7 +232,7 @@
 .guilds_a4d4d9 {
     width: var(--guildbar-width);
 
-    .wrapper_fd07a3 {
+    .wrapper_c4cd66 {
         height: calc(var(--guildbar-width) * 0.625) !important;
 
         span {
@@ -292,18 +292,18 @@
     padding: 0;
     display: inline-block;
 
-    .content_e9f61e,
-    .children_e9f61e {
+    .content_d808b0,
+    .children_d808b0 {
         display: none;
     }
 
-    .avatar_e9f61e {
+    .avatar_d808b0 {
         margin: 0;
         flex-grow: 1;
     }
 }
 
-.layout_e9f61e {
+.layout_d808b0 {
     justify-content: center;
 }
 

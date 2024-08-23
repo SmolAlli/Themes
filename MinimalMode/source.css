@@ -32,7 +32,7 @@
 }
 
 /* Fixes overflow for unread bars */
-.unreadBottom__6be9f > .bar_c10249 {
+.unreadBottom__6be9f > .bar_edf32f {
   font-size: 10px;
 }
 
@@ -58,7 +58,7 @@
 }
 
 /* Header container heights */
-.container_e44302,
+.container_fc4f04,
 .header_fd6364,
 .searchBar_f0963d {
   height: var(--header-height);
@@ -87,7 +87,7 @@
 }
 
 .customScroller_c25c6d > div,
-.sidebarScrollable_e9196a + .content_e9196a {
+.sidebarScrollable_ff90b2 + .content_ff90b2 {
   max-width: unset;
 }
 
@@ -181,10 +181,10 @@
 }
 
 /* Messages */
-.cozy_ec86aa.wrapper_ec86aa {
+.cozy_f9f2ca.wrapper_f9f2ca {
   padding-left: 64px;
 }
-.cozy_ec86aa.wrapper_ec86aa .avatar_ec86aa {
+.cozy_f9f2ca.wrapper_f9f2ca .avatar_f9f2ca {
   transform: scale(0.75);
   width: 32px;
   height: 32px;
@@ -207,10 +207,10 @@
   width: var(--guildbar-width);
   /* Makes open folders look normal */
 }
-.guilds_a4d4d9 .wrapper_fd07a3 {
+.guilds_a4d4d9 .wrapper_c4cd66 {
   height: calc(var(--guildbar-width) * 0.625) !important;
 }
-.guilds_a4d4d9 .wrapper_fd07a3 span {
+.guilds_a4d4d9 .wrapper_c4cd66 span {
   max-height: calc(var(--guildbar-width) * 0.375) !important;
 }
 .guilds_a4d4d9 div[style*="height: 56px"],
@@ -252,16 +252,16 @@
   padding: 0;
   display: inline-block;
 }
-.channel_c91bad:is([href="/channels/@me"], [href="/discovery"], [href="/library"], [href="/store"]) .content_e9f61e,
-.channel_c91bad:is([href="/channels/@me"], [href="/discovery"], [href="/library"], [href="/store"]) .children_e9f61e {
+.channel_c91bad:is([href="/channels/@me"], [href="/discovery"], [href="/library"], [href="/store"]) .content_d808b0,
+.channel_c91bad:is([href="/channels/@me"], [href="/discovery"], [href="/library"], [href="/store"]) .children_d808b0 {
   display: none;
 }
-.channel_c91bad:is([href="/channels/@me"], [href="/discovery"], [href="/library"], [href="/store"]) .avatar_e9f61e {
+.channel_c91bad:is([href="/channels/@me"], [href="/discovery"], [href="/library"], [href="/store"]) .avatar_d808b0 {
   margin: 0;
   flex-grow: 1;
 }
 
-.layout_e9f61e {
+.layout_d808b0 {
   justify-content: center;
 }
 
