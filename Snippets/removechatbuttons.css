@@ -16,6 +16,8 @@
   --server-shop: block;
   --boost: flex;
   --activity: block;
+  --discover: block;
+  --discover-indicator: 72px;
 }
 
 #channels [aria-label="Create Invite"] {
@@ -41,6 +43,14 @@
 }
 #channels [data-list-item-id*=channels___boosts-] {
   display: var(--boost);
+}
+
+[class*=tree_] [class*=footer_] {
+  display: var(--discover);
+}
+
+[class*=unreadMentionsFixedFooter_] {
+  bottom: var(--discover-indicator);
 }
 
 [class*=form-] [class*=attachButton_] {

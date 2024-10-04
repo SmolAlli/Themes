@@ -16,6 +16,8 @@
     --server-shop: block;
     --boost: flex;
     --activity: block;
+    --discover: block;
+    --discover-indicator: 72px;
 }
 
 // Channels sidebar
@@ -49,6 +51,15 @@
     [data-list-item-id*='channels___boosts-'] {
         display: var(--boost);
     }
+}
+
+// Discover button
+[class*='tree_'] [class*='footer_'] {
+    display: var(--discover);
+}
+
+[class*='unreadMentionsFixedFooter_'] {
+    bottom: var(--discover-indicator);
 }
 
 // Chat buttons
