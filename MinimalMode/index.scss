@@ -8,6 +8,7 @@
     --sidebar-width: 200px;
     --header-height: 40px;
     --avatar-size: 32px;
+    --play-again-size: 28px;
 }
 
 /* Makes all member list/"channel information" areas work */
@@ -24,15 +25,17 @@
 
 /* Sidebars */
 
-.sidebar_a4d4d9,
-.members_cbd271,
-.membersWrap_cbd271,
-.nowPlayingColumn_c2739c,
-.bannerImage_fd6364,
-.container-NkLXgf,
-.privateChannels_f0963d {
-    width: var(--sidebar-width);
-    min-width: auto;
+#app-mount {
+    .sidebar_a4d4d9,
+        .members_cbd271,
+        .membersWrap_cbd271,
+        .nowPlayingColumn_c2739c,
+        .bannerImage_fd6364,
+        .container-NkLXgf,
+        .privateChannels_f0963d {
+            width: var(--sidebar-width) !important;
+            min-width: auto;
+        }
 }
 
 /* Fixes overflow for unread bars */
@@ -42,6 +45,14 @@
 
 .topPill-3DJJNV .item-3XjbnG {
     margin: 0 4px 0 0;
+}
+
+/* "Play again" */
+
+.iconCard_e5a9ed {
+    height: var(--play-again-size);
+    width: var(--play-again-size);
+    border-radius: 30%;
 }
 
 /* User Container */
@@ -80,7 +91,7 @@
     flex: 0;
 }
 
-.contentColumn_c25c6d {
+.contentColumn_c25c6d:not([id='voice-&-video-tab']) {
     flex-grow: 1;
     max-width: 100%;
 }
