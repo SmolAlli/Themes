@@ -26,7 +26,6 @@
 /* Sidebars */
 
 #app-mount {
-
     .sidebar_c48ade,
     .members_c8ffbb,
     .membersWrap_c8ffbb,
@@ -37,10 +36,14 @@
         width: var(--sidebar-width) !important;
         min-width: auto;
     }
+
+    .hidden_c48ade {
+        width: 0 !important;
+    }
 }
 
 /* Fixes overflow for unread bars */
-.unreadBottom__6be9f>.bar__3b95d {
+.unreadBottom__6be9f > .bar__3b95d {
     font-size: 10px;
 }
 
@@ -100,14 +103,14 @@
 #my-account-tab {
     padding: unset;
 
-    &>div {
+    & > div {
         max-width: 740px;
         padding: 60px 40px 80px;
     }
 }
 
-.customScroller__23e6b>div,
-.sidebarScrollable_ff90b2+.content_ff90b2 {
+.customScroller__23e6b > div,
+.sidebarScrollable_ff90b2 + .content_ff90b2 {
     max-width: unset;
 }
 
@@ -155,7 +158,7 @@
     z-index: 1;
 
     &::after {
-        content: "|||";
+        content: '|||';
         color: var(--header-primary);
         font-size: 12px;
         position: absolute;
@@ -260,19 +263,19 @@
         }
     }
 
-    div[style*="height: 56px"],
-    [role="group"] {
+    div[style*='height: 56px'],
+    [role='group'] {
         height: auto !important;
     }
 
-    [class*="unreadMentionsIndicator"],
+    [class*='unreadMentionsIndicator'],
     .wrapper__48112 {
         width: 100%;
     }
 
     .wrapper-28eC3z,
-    [class*="guildsError-"],
-    svg[width="48"] {
+    [class*='guildsError-'],
+    svg[width='48'] {
         width: calc(var(--guildbar-width) * 0.625) !important;
         height: calc(var(--guildbar-width) * 0.625) !important;
     }
@@ -315,7 +318,7 @@
 }
 
 /* Private channels horizontal icons */
-.channel__972a0:is([href="/channels/@me"], [href="/discovery"], [href="/library"], [href="/store"]) {
+.channel__972a0:is([href='/channels/@me'], [href='/discovery'], [href='/library'], [href='/store']) {
     width: calc(25% - 8px);
     margin-left: 8px;
     padding: 0;

@@ -13,15 +13,15 @@
     --added-icons: 0;
 }
 
-.container_b2ca13 > .flex_dc333f :not(:last-child) {
+.container__37e49 > .flex__7c0ba :not(:last-child) {
     display: none;
 }
 
-.container_b2ca13 > .flex_dc333f:hover :not(:last-child) {
+.container__37e49 > .flex__7c0ba:hover :not(:last-child) {
     display: flex;
 }
 
-.container_b2ca13 .flex_dc333f:hover {
+.container__37e49 .flex__7c0ba:hover {
     flex-direction: column;
     margin-bottom: calc(
         ((var(--added-icons) + 2) * var(--icon-height))
@@ -29,37 +29,37 @@
     z-index: 1;
 }
 
-.container_b2ca13 .flex_dc333f:hover > :not(:last-child) {
+.container__37e49 .flex__7c0ba:hover > :not(:last-child) {
     background: var(--background-floating);
     border-radius: 0px;
 }
 
-.container_b2ca13 .flex_dc333f:hover > :first-child {
+.container__37e49 .flex__7c0ba:hover > :first-child {
     border-radius: 4px 4px 0px 0px;
 }
 
-.container_b2ca13 .flex_dc333f:hover > :nth-child(2) {
+.container__37e49 .flex__7c0ba:hover > :nth-child(2) {
     border-radius: 0px 0px 4px 4px;
 }
 
-.container_b2ca13 .flex_dc333f:hover > :last-child {
+.container__37e49 .flex__7c0ba:hover > :last-child {
     flex-direction: column;
     z-index: 1;
     background: var(--background-secondary-alt);
     border-radius: 4px;
 }
 
-.button_adca65.enabled_adca65:hover {
+.button__67645.enabled__67645:hover {
     color: var(--interactive-hover) !important;
     background-color: var(--background-modifier-selected) !important;
 }
 
-.container_b2ca13 {
+.container__37e49 {
     display: flex;
     justify-content: space-around;
 }
 
-.avatarWrapper_b2ca13 {
+.avatarWrapper__37e49 {
     width: 100%;
 }
 

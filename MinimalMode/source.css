@@ -32,6 +32,9 @@
   width: var(--sidebar-width) !important;
   min-width: auto;
 }
+#app-mount .hidden_c48ade {
+  width: 0 !important;
+}
 
 /* Fixes overflow for unread bars */
 .unreadBottom__6be9f > .bar__3b95d {
