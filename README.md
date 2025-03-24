@@ -4,5 +4,5 @@ A collection of my themes
 
 Current themes:
 
--   MinimalMode
+-   MinimalMode (abandoned)
 -   Minecraft (currently paused/incomplete)
